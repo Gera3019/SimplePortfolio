@@ -116,19 +116,7 @@ header nav ul li .active i {
   color: var(--themecolor);
 }
 
-header .footer {
-  text-align: center;
-  background-color: var(--sideColor);
-  width: 300px;
-  color: lightgray;
-  font-size: 14px;
-  letter-spacing: 0.6px;
-  padding: 15px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: 0.4s;
-}
+
 
 #menubar {
   position: fixed;
@@ -154,9 +142,7 @@ header .footer {
     text-align: center;
   }
 
-  header .footer {
-    left: -300px;
-  }
+  
 
   #menubar {
     display: block;
@@ -167,10 +153,8 @@ header .footer {
     width: 100%;
   }
 
-  .mobile-nav-active header .footer {
-    left: 0;
-    width: 100%;
-  }
+  
+
 }
 
 main {
