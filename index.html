@@ -1,577 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <title>Personal Portfolio Web</title>
-  </head>
-  <body>
-    <header>
-      <div class="profile">
-        <img src="assets/user.jpeg" alt="" width="150px" />
-        <h1>Gerardo Jurado</h1>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/gerardoenrique.juradocalle" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://github.com/Gera3019" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/gerardo-jurado-0a0269236/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://wa.me/+51973848814" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Personal Portfolio Web</title>
+</head>
+
+<body>
+  <header>
+    <div class="profile">
+      <img src="assets/user.jpeg" alt="" width="150px" />
+      <h1>Gerardo Jurado</h1>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/gerardoenrique.juradocalle" target="_blank"><i
+            class="fab fa-facebook"></i></a>
+        <a href="https://github.com/Gera3019" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gerardo-jurado-0a0269236/" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/+51973848814" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fas fa-user"></i> About</a>
+        </li>
+        <li>
+          <a href="#portfolio"><i class="fas fa-suitcase"></i> Portfolio</a>
+        </li>
+        <li>
+          <a href="#services"><i class="fas fa-cogs"></i> Services</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="far fa-envelope"></i> Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <i class="fas fa-bars" id="menubar"></i>
+
+  <main>
+    <section id="home">
+      <div class="home-row">
+        <h1>Hi,This is <br />Gerardo Jurado<span>.</span></h1>
+        <p>I'm a <span class="auto"></span></p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="subhead">ABOUT ME</h1>
+      <div class="divider"></div>
+      <p>
+        Junior programmer with one year of experience in the field, passionate about web development and mobile
+        applications. I am dedicated to creating innovative solutions and continually expanding my knowledge in the
+        ever-evolving world of technology. I thrive on tackling new challenges and turning them into opportunities for
+        growth and learning. My goal is to contribute to exciting projects and collaborate with like-minded individuals
+        in the dynamic realm of software development.
+      </p>
+
+      <div class="about-col">
+        <div class="img-col">
+          <img src="assets/user.jpeg" alt="..." />
+        </div>
+
+        <div class="info-col">
+          <h2>SYSTEMS ENGINEER</h2>
+          <p class="subpara">
+            Bachelor's degree in Systems Engineering, a discipline that provided me with a solid foundation in computer
+            science, mathematics, and problem-solving. Throughout my academic journey, I gained a deep understanding of
+            software development, database management, and system architecture.
+          </p>
+          <div class="icon-list-col">
+            <div class="icon-list">
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i><strong> Birthday: </strong>
+                  <span>08/12/1999</span>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i><strong> Web: </strong>
+                  <span>www.GeraWeb.com</span>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i><strong> Phone: </strong> <span>973848814</span>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i><strong> City: </strong> <span>Callao,Peru</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="icon-list">
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i><strong> Age: </strong>
+                  <span>23</span>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i><strong> Degree: </strong>
+                  <span>Bachelor</span>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i><strong> Email: </strong> <span>juradogerardo25@gmail.com</span>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i><strong> Work: </strong> <span>Available</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
-          </li>
-          <li>
-            <a href="#about"><i class="fas fa-user"></i> About</a>
-          </li>
-          <li>
-            <a href="#portfolio"><i class="fas fa-suitcase"></i> Portfolio</a>
-          </li>
-          <li>
-            <a href="#services"><i class="fas fa-cogs"></i> Services</a>
-          </li>
-          <li>
-            <a href="#contact"><i class="far fa-envelope"></i> Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <i class="fas fa-bars" id="menubar"></i>
-
-    <main>
-      <section id="home">
-        <div class="home-row">
-          <h1>Hi,This is <br />Gerardo Jurado<span>.</span></h1>
-          <p>I'm a <span class="auto"></span></p>
-        </div>
-      </section>
-
-      <section id="about">
-        <h1 class="subhead">ABOUT ME</h1>
+      <div id="fact">
+        <h1 class="subhead">FACTS</h1>
         <div class="divider"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quisquam
-          at, tempora odit aperiam facere ratione et illo suscipit ad cum
-          impedit possimus voluptatum non, dolorum neque. Laborum, voluptatibus
-          hic.
+
+        <p class="subpara">
+          Allow me to share with you some intriguing insights into my journey. In this section, I'll walk you through
+          the diverse array of clients I've had the privilege to work with, the impactful projects I've been a part of,
+          and the countless hours I've dedicated to honing my skills.
         </p>
 
-        <div class="about-col">
-          <div class="img-col">
-            <img src="assets/user.jpeg" alt="..." />
+        <div class="factrow">
+          <div class="factbox">
+            <i class="far fa-smile"></i>
+            <strong>50+</strong>
+            <p>HAPPY CLIENT</p>
           </div>
 
-          <div class="info-col">
-            <h2>FRONT END DEVELOPER</h2>
-            <p class="subpara">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate laudantium magni sunt tempore nemo quia inventore esse
-              excepturi ad distinctio, officia aperiam quis doloribus. Labore,
-              autem? Labore quo eveniet perspiciatis.
+          <div class="factbox">
+            <i class="fas fa-file"></i>
+            <strong>60+</strong>
+            <p>PROJECTS</p>
+          </div>
+
+          <div class="factbox">
+            <i class="fas fa-headphones"></i>
+            <strong>24/7</strong>
+            <p>SUPPORT</p>
+          </div>
+
+          <div class="factbox">
+            <i class="fas fa-clock"></i>
+            <strong>10+</strong>
+            <p>PENDING ORDERS</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="skill">
+        <h1 class="subhead">SKILLS</h1>
+        <div class="divider"></div>
+        <p class="subpara">
+          My skills are the building blocks of my digital journey. With a year of experience in the industry, I've honed
+          a versatile skill set that spans web development, mobile applications, and more. My proficiency in various
+          programming languages, frameworks, and tools equips me to craft innovative solutions and drive technological
+          advancements. Explore the key skills that define my technical prowess.
+        </p>
+
+        <div class="skillrow">
+
+          <div class="skillbox">
+            <div class="skillinfo">
+              <h2>HTML</h2>
+              <h2>90%</h2>
+            </div>
+            <div class="skillouter">
+              <div class="skillinner" data-count="90"></div>
+            </div>
+          </div>
+
+          <div class="skillbox">
+            <div class="skillinfo">
+              <h2>CSS</h2>
+              <h2>60%</h2>
+            </div>
+            <div class="skillouter">
+              <div class="skillinner" data-count="60"></div>
+            </div>
+          </div>
+
+          <div class="skillbox">
+            <div class="skillinfo">
+              <h2>GIT</h2>
+              <h2 class="porcentage">85%</h2>
+            </div>
+            <div class="skillouter">
+              <div class="skillinner" data-count="85"></div>
+            </div>
+          </div>
+
+
+          <div class="skillbox">
+            <div class="skillinfo">
+              <h2>REACT</h2>
+              <h2>70%</h2>
+            </div>
+            <div class="skillouter">
+              <div class="skillinner" data-count="70"></div>
+            </div>
+          </div>
+
+          <div class="skillbox">
+            <div class="skillinfo">
+              <h2>JAVASCRIPT</h2>
+              <h2>75%</h2>
+            </div>
+            <div class="skillouter">
+              <div class="skillinner" data-count="75"></div>
+            </div>
+          </div>
+
+          <div class="skillbox">
+            <div class="skillinfo">
+              <h2>JAVA</h2>
+              <h2>90%</h2>
+            </div>
+            <div class="skillouter">
+              <div class="skillinner loading" data-count="90"></div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <div id="resume">
+        <h1 class="subhead">RESUME</h1>
+        <div class="divider"></div>
+        <p class="subpara">
+          My journey in the world of technology has been enriched by a combination of education and professional
+          experience. This section provides a snapshot of my academic background and the diverse roles I've undertaken
+          during my career. Discover how my educational foundation and work experiences have shaped my path in the
+          dynamic field of technology.
+        </p>
+
+        <div class="resumerow">
+          <div class="resumecol">
+            <h2>SUMMARY</h2>
+            <div class="myinfo">
+              <h3>G. JURADO</h3>
+              <p>
+                I'm a Systems Engineer based in Lima, Callao, Peru, with a passion for technology and a strong
+                foundation in computer science. I'm driven to tackle challenges and create innovative solutions.
+              </p>
+              <ul>
+                <li>LIMA,CALLAO, PERU</li>
+                <li>572 - 0652</li>
+                <li>juradogerardo25@gmail.com</li>
+              </ul>
+            </div>
+
+            <h2>EDUCATION</h2>
+            <div class="myedu">
+              <h3>SYSTEM ENGINEER</h3>
+              <span class="sp-box"> 2019-2023</span>
+              <p>UNMSM</p>
+              <p>
+                I am a proud graduate with a degree in Systems Engineering from the National University of San Marcos
+                (UNMSM).
+              </p>
+            </div>
+          </div>
+
+          <div class="resumecol">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+
+            <div class="proexp">
+              <h1>BECARY ENGINEER</h1>
+              <span class="sp-box">2022-present</span>
+              <p>LIMA,PERU</p>
+
+              <ul>
+                <li>Provided user support through ticketing systems and help desk solutions.</li>
+                <li>Developed proficiency in operating and managing SAP Business One.</li>
+                <li>Demonstrated expertise in Microsoft Office 365 applications, including Word and Excel.</li>
+                <li>Actively contributed to software development projects.</li>
+                <li>Utilized programming skills to enhance company systems.</li>
+                <li>Gained a well-rounded understanding of IT operations.</li>
+                <li>Acquired skills and knowledge for a technology-driven work environment.</li>
+                <li>Experienced professional and personal growth during the internship.</li>
+              </ul>
+            </div>
+
+            <div class="proexp">
+              <h1>PROGRAMMER</h1>
+              <span class="sp-box">2021-2022</span>
+              <p>LIMA,PERU</p>
+
+              <ul>
+                <li>Collaborated with clients to understand and define software requirements.</li>
+                <li>Designed, developed, and maintained custom software solutions.</li>
+                <li>Ensured code quality and best practices through code reviews and teamwork.</li>
+                <li>Provided technical support and troubleshooting for clients' applications.</li>
+                <li>Managed version control systems for code repositories (e.g., Git).</li>
+                <li>Worked with databases and data management systems for efficient data handling.</li>
+                <li>Created and maintained documentation for software design and development.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="portfolio">
+      <h1 class="subhead">PORTFOLIO</h1>
+      <div class="divider"></div>
+      <p>
+        Welcome to my personal portfolio, where I showcase a selection of my proudest projects and accomplishments. Each
+        project represents not only the technical skills I've honed but also my passion for creating innovative
+        solutions. Feel free to explore these examples of my work, which I hope reflect my dedication to delivering
+        high-quality results and my commitment to continuous improvement
+      </p>
+
+      <div class="portrow">
+
+        <div class="portitem clickable-item">
+          <div class="portimg">
+            <img src="assets/project1.png" alt="..." />
+          </div>
+          <div class="portinfo">
+            <h4>JAVA</h4>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <i class="fas fa-upload"></i>
+          </div>
+        </div>
+
+        <div class="portitem clickable-item">
+          <div class="portimg">
+            <img src="assets/project1.png" alt="..." />
+          </div>
+          <div class="portinfo">
+            <h4>JAVA</h4>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <i class="fas fa-upload"></i>
+          </div>
+        </div>
+
+        <div class="portitem clickable-item">
+          <div class="portimg">
+            <img src="assets/project1.png" alt="..." />
+          </div>
+          <div class="portinfo">
+            <h4>JAVA</h4>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <i class="fas fa-upload"></i>
+          </div>
+        </div>
+
+        <div class="portitem clickable-item">
+          <div class="portimg">
+            <img src="assets/project1.png" alt="..." />
+          </div>
+          <div class="portinfo">
+            <h4>JAVA</h4>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <i class="fas fa-upload"></i>
+          </div>
+        </div>
+
+        <div class="portitem clickable-item">
+          <div class="portimg">
+            <img src="assets/project1.png" alt="..." />
+          </div>
+          <div class="portinfo">
+            <h4>JAVA</h4>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <i class="fas fa-upload"></i>
+          </div>
+        </div>
+
+        <div class="portitem clickable-item">
+          <div class="portimg">
+            <img src="assets/project1.png" alt="..." />
+          </div>
+          <div class="portinfo">
+            <h4>JAVA</h4>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <i class="fas fa-upload"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h1 class="subhead">Services</h1>
+      <div class="divider"></div>
+      <p>
+        Whether you require custom software development, technical support, or assistance with IT solutions, I'm here to
+        help. With a strong foundation in programming and a commitment to excellence, I aim to deliver efficient and
+        effective solutions that make a real impact. Explore the services I provide and let's collaborate to bring your
+        ideas to life.
+      </p>
+
+      <div class="servicerow">
+
+
+        <div class="servicebox">
+          <div class="icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="serinfo">
+            <h4>Web and Mobile Application Development</h4>
+            <p>Design and develop custom applications for web and mobile, tailored to meet clients' specific needs.</p>
+          </div>
+        </div>
+
+        <div class="servicebox">
+          <div class="icon">
+            <i class="fas fa-wrench"></i>
+          </div>
+          <div class="serinfo">
+            <h4>Maintenance and Technical Support</h4>
+            <p>Provide ongoing maintenance and technical support services to ensure smooth operation of existing
+              applications and systems.</p>
+          </div>
+        </div>
+
+        <div class="servicebox">
+          <div class="icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="serinfo">
+            <h4>Technology and Systems Consulting</h4>
+            <p>Offer expert guidance in technology selection, system architectures, and development strategies to help
+              clients make informed decisions.</p>
+          </div>
+        </div>
+
+        <div class="servicebox">
+          <div class="icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <div class="serinfo">
+            <h4>Bespoke Software Development</h4>
+            <p>Create customized software solutions to address clients' specific issues and enhance the efficiency of
+              their operations.</p>
+          </div>
+        </div>
+
+        <div class="servicebox">
+          <div class="icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <div class="serinfo">
+            <h4>System Integration</h4>
+            <p>Integrate existing systems and applications to optimize data flow and processes within an organization.
             </p>
-            <div class="icon-list-col">
-              <div class="icon-list">
-                <ul>
-                  <li>
-                    <i class="fas fa-chevron-right"></i><strong> Age: </strong>
-                    <span>23</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-chevron-right"></i><strong> web: </strong>
-                    <span>www.webprueba-com</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-chevron-right"></i
-                    ><strong> phone: </strong> <span>973848814</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-chevron-right"></i
-                    ><strong> Country: </strong> <span>Peru</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="icon-list">
-                <ul>
-                  <li>
-                    <i class="fas fa-chevron-right"></i><strong> Age: </strong>
-                    <span>23</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-chevron-right"></i><strong> web: </strong>
-                    <span>www.webprueba-com</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-chevron-right"></i
-                    ><strong> phone: </strong> <span>973848814</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-chevron-right"></i
-                    ><strong> Country: </strong> <span>Peru</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
 
-        <div id="fact">
-          <h1 class="subhead">FACTS</h1>
-          <div class="divider"></div>
-  
-          <p class="subpara">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            laudantium magni sunt tempore nemo quia inventore esse excepturi ad
-            distinctio, officia aperiam quis doloribus. Labore, autem? Labore quo
-            eveniet perspiciatis.
-          </p>
-  
-          <div class="factrow">
-            <div class="factbox">
-              <i class="far fa-smile"></i>
-              <strong>50+</strong>
-              <p>HAPPY CLIENT</p>
-            </div>
-  
-            <div class="factbox">
-              <i class="fas fa-file"></i>
-              <strong>60+</strong>
-              <p>PROJECTS</p>
-            </div>
-  
-            <div class="factbox">
-              <i class="fas fa-headphones"></i>
-              <strong>24/7</strong>
-              <p>Support</p>
-            </div>
-  
-            <div class="factbox">
-              <i class="fas fa-clock"></i>
-              <strong>10+</strong>
-              <p>PENDING ORDERS</p>
-            </div>
+        <div class="servicebox">
+          <div class="icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="serinfo">
+            <h4>Cybersecurity and Audit</h4>
+            <p>Assess clients' system security, identify vulnerabilities, and provide solutions to safeguard data and
+              infrastructure.</p>
           </div>
         </div>
-  
-        <div id="skill">
-          <h1 class="subhead">SKILLS</h1>
-          <div class="divider"></div>
-          <p class="subpara">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            laudantium magni sunt tempore nemo quia inventore esse excepturi ad
-            distinctio, officia aperiam quis doloribus. Labore, autem? Labore quo
-            eveniet perspiciatis.
-          </p>
-  
-          <div class="skillrow">
-            <div class="skillbox">
-              <div class="skillinfo">
-                <h2>HTML</h2>
-                <h2>85%</h2>
-              </div>
-              <div class="skillouter">
-                <div class="skillinner" style="width: 85%"></div>
-              </div>
-            </div>
-  
-            <div class="skillbox">
-              <div class="skillinfo">
-                <h2>CSS</h2>
-                <h2>75%</h2>
-              </div>
-              <div class="skillouter">
-                <div class="skillinner" style="width: 75%"></div>
-              </div>
-            </div>
-  
-            <div class="skillbox">
-              <div class="skillinfo">
-                <h2>JAVASCRIPT</h2>
-                <h2>60%</h2>
-              </div>
-              <div class="skillouter">
-                <div class="skillinner" style="width: 60%"></div>
-              </div>
-            </div>
-  
-            <div class="skillbox">
-              <div class="skillinfo">
-                <h2>JAVA</h2>
-                <h2>90%</h2>
-              </div>
-              <div class="skillouter">
-                <div class="skillinner" style="width: 90%"></div>
-              </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="subhead">CONTACT</h1>
+      <div class="divider"></div>
+      <p>You can reach out to me for any inquiries or to discuss potential projects. I'm here to assist you.</p>
+
+
+      <div class="contactrow">
+        <div class="contactleft">
+          <div class="iconbox">
+            <div class="icon"><i class="far fa-envelope"></i></div>
+            <div class="info">
+              <h4>email</h4>
+              <p>juradogerardo25@gmail.com</p>
             </div>
           </div>
+
+          <div class="iconbox">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="info">
+              <h4>Call</h4>
+              <p>973848814</p>
+            </div>
+          </div>
+
+          <div class="iconbox">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info">
+              <h4>Location</h4>
+              <p>Callao, Peru</p>
+            </div>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.135291746283!2d-77.10165962570917!3d-12.034205641665475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cea8f326d94b%3A0x628a8f7447fe0985!2sRicardo%20Palma%20212%2C%20Callao%2007041!5e0!3m2!1ses-419!2spe!4v1698351911370!5m2!1ses-419!2spe"
+            width="100%" height="250" style="border: 4" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-  
-        <div id="resume">
-          <h1 class="subhead">RESUME</h1>
-          <div class="divider"></div>
-          <p class="subpara">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ab
-            ipsum quae esse alias accusantium quibusdam. Sit, autem nemo ratione
-            id qui animi reprehenderit, quaerat, ducimus distinctio nisi minus
-            ullam.
-          </p>
-  
-          <div class="resumerow">
-            <div class="resumecol">
-              <h2>SUMMARY</h2>
-              <div class="myinfo">
-                <h3>G. JURADO</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam similique accusamus animi laudantium optio adipisci,
-                  quia incidunt impedit deleniti. In a ipsa molestias ipsum.
-                  Consectetur quis numquam natus ab perspiciatis?
-                </p>
-                <ul>
-                  <li>LIMA,CALLAO, PERU</li>
-                  <li>572 - 0652</li>
-                  <li>juradogerardo25@gmail.com</li>
-                </ul>
-              </div>
-  
-              <h2>EDUCATION</h2>
-              <div class="myedu">
-                <h3>SYSTEM engineer</h3>
-                <span class="sp-box"> 215-216</span>
-                <p>UNMSM</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  voluptatum totam nihil ullam quod officia non eligendi
-                  reprehenderit accusamus. Facere omnis eaque debitis iste
-                  explicabo modi, quisquam error ipsa id.
-                </p>
-              </div>
-            </div>
-  
-            <div class="resumecol">
-              <h2>PROFESSIONAL EXPERIENCE</h2>
-  
-              <div class="proexp">
-                <h1>BECARY ENGINEER</h1>
-                <span class="sp-box">2019-present</span>
-                <p>LIMA,PERU</p>
-  
-                <ul>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae quidem, dolor dicta ea asperiores nulla sit beatae
-                    fugiat minus repellat commodi dolore nihil voluptates
-                    repellendus magnam assumenda, provident inventore iusto.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae quidem, dolor dicta ea asperiores nulla sit beatae
-                    fugiat minus repellat commodi dolore nihil voluptates
-                    repellendus magnam assumenda, provident inventore iusto.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae quidem, dolor dicta ea asperiores nulla sit beatae
-                    fugiat minus repellat commodi dolore nihil voluptates
-                    repellendus magnam assumenda, provident inventore iusto.
-                  </li>
-                </ul>
-              </div>
-  
-              <div class="proexp">
-                <h1>PROGRAMMER</h1>
-                <span class="sp-box">2019-present</span>
-                <p>LIMA,PERU</p>
-  
-                <ul>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae quidem, dolor dicta ea asperiores nulla sit beatae
-                    fugiat minus repellat commodi dolore nihil voluptates
-                    repellendus magnam assumenda, provident inventore iusto.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae quidem, dolor dicta ea asperiores nulla sit beatae
-                    fugiat minus repellat commodi dolore nihil voluptates
-                    repellendus magnam assumenda, provident inventore iusto.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae quidem, dolor dicta ea asperiores nulla sit beatae
-                    fugiat minus repellat commodi dolore nihil voluptates
-                    repellendus magnam assumenda, provident inventore iusto.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+
+        <div class="contactright">
+          <form action="">
+            <input type="text" name="name" id="name" placeholder="your name" />
+            <input type="email" name="email" id="email" placeholder="your email" />
+            <input type="text" name="subject" id="subject" placeholder="subject" />
+
+            <textarea name="msg" id="msg" rows="9" placeholder="your message"></textarea>
+
+            <input type="submit" value="send messages" />
+          </form>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-      <section id="portfolio">
-        <h1 class="subhead">PORTFOLIO</h1>
-        <div class="divider"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          sint ut dolorum, labore dolor illo consectetur, aspernatur, animi
-          repudiandae aliquam error! Vitae ipsa saepe illum optio nobis, minima
-          corporis minus.
-        </p>
+  <script src="script.js"></script>
+</body>
 
-        <div class="portrow">
-          <div class="portitem">
-            <div class="portimg">
-              <img src="assets/project1.png" alt="..." />
-            </div>
-            <div class="portinfo">
-              <h4>JAVA</h4>
-              <p>Lorem ipsum dolor sit amet consectetur</p>
-              <a href="#"><i class="fas fa-upload"></i></a>
-            </div>
-          </div>
-
-          <div class="portitem">
-            <div class="portimg">
-              <img src="assets/project1.png" alt="..." />
-            </div>
-            <div class="portinfo">
-              <h4>JAVA</h4>
-              <p>Lorem ipsum dolor sit amet consectetur</p>
-              <a href="#"><i class="fas fa-upload"></i></a>
-            </div>
-          </div>
-
-          <div class="portitem">
-            <div class="portimg">
-              <img src="assets/project1.png" alt="..." />
-            </div>
-            <div class="portinfo">
-              <h4>JAVA</h4>
-              <p>Lorem ipsum dolor sit amet consectetur</p>
-              <a href="#"><i class="fas fa-upload"></i></a>
-            </div>
-          </div>
-
-          <div class="portitem">
-            <div class="portimg">
-              <img src="assets/project1.png" alt="..." />
-            </div>
-            <div class="portinfo">
-              <h4>JAVA</h4>
-              <p>Lorem ipsum dolor sit amet consectetur</p>
-              <a href="#"><i class="fas fa-upload"></i></a>
-            </div>
-          </div>
-
-          <div class="portitem">
-            <div class="portimg">
-              <img src="assets/project1.png" alt="..." />
-            </div>
-            <div class="portinfo">
-              <h4>JAVA</h4>
-              <p>Lorem ipsum dolor sit amet consectetur</p>
-              <a href="#"><i class="fas fa-upload"></i></a>
-            </div>
-          </div>
-
-          <div class="portitem">
-            <div class="portimg">
-              <img src="assets/project1.png" alt="..." />
-            </div>
-            <div class="portinfo">
-              <h4>JAVA</h4>
-              <p>Lorem ipsum dolor sit amet consectetur</p>
-              <a href="#"><i class="fas fa-upload"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services">
-        <h1 class="subhead">Services</h1>
-        <div class="divider"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          sint ut dolorum, labore dolor illo consectetur, aspernatur, animi
-          repudiandae aliquam error! Vitae ipsa saepe illum optio nobis, minima
-          corporis minus.
-        </p>
-
-        <div class="servicerow">
-          <div class="servicebox">
-            <div class="icon">
-              <i class="fas fa-suitcase"></i>
-            </div>
-            <div class="serinfo">
-              <h4>Servicio</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                accusamus
-              </p>
-            </div>
-          </div>
-
-          <div class="servicebox">
-            <div class="icon">
-              <i class="fas fa-suitcase"></i>
-            </div>
-            <div class="serinfo">
-              <h4>Servicio</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                accusamus
-              </p>
-            </div>
-          </div>
-
-          <div class="servicebox">
-            <div class="icon">
-              <i class="fas fa-suitcase"></i>
-            </div>
-            <div class="serinfo">
-              <h4>Servicio</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                accusamus
-              </p>
-            </div>
-          </div>
-
-          <div class="servicebox">
-            <div class="icon">
-              <i class="fas fa-suitcase"></i>
-            </div>
-            <div class="serinfo">
-              <h4>Servicio</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                accusamus
-              </p>
-            </div>
-          </div>
-
-          <div class="servicebox">
-            <div class="icon">
-              <i class="fas fa-suitcase"></i>
-            </div>
-            <div class="serinfo">
-              <h4>Servicio</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                accusamus
-              </p>
-            </div>
-          </div>
-
-          <div class="servicebox">
-            <div class="icon">
-              <i class="fas fa-suitcase"></i>
-            </div>
-            <div class="serinfo">
-              <h4>Servicio</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                accusamus
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h1 class="subhead">CONTACT</h1>
-        <div class="divider"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          sint ut dolorum, labore dolor illo consectetur, aspernatur, animi
-          repudiandae aliquam error! Vitae ipsa saepe illum optio nobis, minima
-          corporis minus.
-        </p>
-
-        <div class="contactrow">
-          <div class="contactleft">
-            <div class="iconbox">
-              <div class="icon"><i class="far fa-envelope"></i></div>
-              <div class="info">
-                <h4>email</h4>
-                <p>juradogerardo25@gmail.com</p>
-              </div>
-            </div>
-
-            <div class="iconbox">
-              <div class="icon"><i class="far fa-envelope"></i></div>
-              <div class="info">
-                <h4>Call</h4>
-                <p>973848814</p>
-              </div>
-            </div>
-
-            <div class="iconbox">
-              <div class="icon"><i class="far fa-envelope"></i></div>
-              <div class="info">
-                <h4>Location</h4>
-                <p>Callao, Peru</p>
-              </div>
-            </div>
-
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.135291746283!2d-77.10165962570917!3d-12.034205641665475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cea8f326d94b%3A0x628a8f7447fe0985!2sRicardo%20Palma%20212%2C%20Callao%2007041!5e0!3m2!1ses-419!2spe!4v1698351911370!5m2!1ses-419!2spe"
-              width="100%"
-              height="250"
-              style="border: 4"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-
-          <div class="contactright">
-            <form action="">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="your name"
-              />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="your email"
-              />
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                placeholder="subject"
-              />
-
-              <textarea
-                name="msg"
-                id="msg"
-                rows="9"
-                placeholder="your message"
-              ></textarea>
-
-              <input type="submit" value="send messages" />
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <script src="script.js"></script>
-  </body>
 </html>
