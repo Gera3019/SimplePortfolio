@@ -29,8 +29,6 @@ main {
   color: #fff;
 }
 
-
-
 header {
   display: flex;
   flex-direction: column;
@@ -81,7 +79,6 @@ header .profile .social-icons a:hover {
 }
 
 header nav {
-
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -118,7 +115,12 @@ header nav ul li .active i {
   color: var(--themecolor);
 }
 
-
+header .footer {
+  color: var(--text);
+  text-align:center;
+  font-size: 10px;
+  padding-bottom: 0;
+}
 
 #menubar {
   position: fixed;
@@ -144,8 +146,6 @@ header nav ul li .active i {
     text-align: center;
   }
 
-
-
   #menubar {
     display: block;
   }
@@ -154,9 +154,6 @@ header nav ul li .active i {
     left: 0;
     width: 100%;
   }
-
-
-
 }
 
 main {
@@ -174,7 +171,7 @@ main {
   height: 100vh;
   width: 100%;
   background-image: url(/assets/backgroundweb.png);
-  /*background-size: cover;*/
+  
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -246,8 +243,7 @@ main {
 }
 
 #about {
-  padding: 70px 30px;
-
+  padding: 30px 30px;
 }
 
 .subhead {
@@ -339,7 +335,7 @@ main {
     padding: 50px 10px;
   }
 
-  #about .divider~p {
+  #about .divider ~ p {
     font-size: 14px;
     letter-spacing: 0px;
     text-align: justify;
@@ -388,7 +384,6 @@ main {
   padding-top: 70px;
 }
 
-
 #fact .factrow {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -417,7 +412,6 @@ main {
 @media only screen and (max-width: 700px) {
   #fact {
     padding: 40px 15px;
-
   }
 
   #fact .factrow {
@@ -442,11 +436,9 @@ main {
   }
 }
 
-
 #skill {
   padding-top: 70px;
 }
-
 
 #skill .skillrow {
   margin-top: 35px;
@@ -482,12 +474,7 @@ main {
   border-radius: 20px;
   width: 0%;
   transition: linear 1s;
-
 }
-
-
-
-
 
 @media only screen and (max-width: 450px) {
   #skill {
@@ -500,11 +487,9 @@ main {
   }
 }
 
-
 #resume {
   padding-top: 70px;
 }
-
 
 #resume .resumerow {
   display: flex;
@@ -595,7 +580,7 @@ main {
   display: inline-block;
 }
 
-#resume .resumerow .resumecol .myedu span+p {
+#resume .resumerow .resumecol .myedu span + p {
   color: var(--text);
   font-size: 15px;
   font-weight: 500;
@@ -603,7 +588,7 @@ main {
   margin-bottom: 15px;
 }
 
-#resume .resumerow .resumecol .myedu span+p+p {
+#resume .resumerow .resumecol .myedu span + p + p {
   color: var(--text);
   font-size: 15px;
   font-weight: 500;
@@ -617,7 +602,7 @@ main {
 }
 
 #resume .resumerow .resumecol .proexp::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: -10px;
@@ -626,7 +611,6 @@ main {
   border-radius: 50%;
   border: 2px solid var(--themecolor);
   background-color: #00a78e;
-
 }
 
 #resume .resumerow .resumecol .proexp h1 {
@@ -639,7 +623,6 @@ main {
   font-size: 17px;
   font-weight: 500;
   font-style: italic;
-
 }
 
 #resume .resumerow .resumecol .proexp ul li {
@@ -650,11 +633,9 @@ main {
   font-weight: 500;
 }
 
-@media only screen and (max-width:820px) {
-
+@media only screen and (max-width: 820px) {
   #resume {
     padding: 50px 15px;
-
   }
 
   #resume .resumerow {
@@ -675,8 +656,6 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 35px;
-
-
 }
 
 #portfolio .portrow .portitem {
@@ -684,15 +663,11 @@ main {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-
-
-
 }
 
 #portfolio .portrow .portitem .portimg img {
   width: 100%;
   border-radius: 10px;
-
 }
 
 #portfolio .portrow .portitem .portinfo {
@@ -718,8 +693,8 @@ main {
 
 #portfolio .portrow .portitem:hover .portinfo {
   transform: scale(1);
+
   visibility: visible;
-  
 }
 
 #portfolio .portrow .portitem .portinfo h4 {
@@ -728,7 +703,7 @@ main {
   font-weight: 600;
 }
 
-#portfolio .portrow .portitem .portinfo h4+p {
+#portfolio .portrow .portitem .portinfo h4 + p {
   color: var(--bgcolor);
   font-size: 14px;
 }
@@ -751,106 +726,110 @@ main {
   color: var(--bgcolor);
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width: 650px) {
   #portfolio {
     padding: 50px 10px;
   }
 
   #portfolio .portrow {
-
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
   }
 }
 
-@media only screen and (max-width:450px) {
-
-
+@media only screen and (max-width: 450px) {
   #portfolio .portrow {
-
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 15px;
   }
 }
 
 #services {
-  padding: 70px 30px;
-
+  padding: 20px 30px;
 }
 
 #services .servicerow {
-  margin-top: 50px;
+  margin-top: 30px;
   display: grid;
-  
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
   
 }
 
-#services .servicerow .servicebox {
+#services .servicerow .hover-efect{
+  transition: 0.5s;
+}
 
+#services .servicerow .hover-efect:hover {
+  transform: translateY(-20px);
+}
+
+#services .servicerow .hover-efect .servicebox {
+  
+  background-color: #262626;
+  border-radius: 10px;
   display: flex;
+  flex-direction: column;
+  
+
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  height: 150px;
+
+  padding: 30px;
+
+  cursor: pointer;
+
+  height: 100%;
 }
 
-#services .servicerow .servicebox .icon i {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+#services .servicerow .hover-efect .servicebox:hover {
   background-color: var(--themecolor);
-  border: 2px solid var(--themecolor);
-  font-size: 25px;
-  line-height: 46px;
-  color: var(--bgcolor);
-  transition: 0.4s;
-  text-align: center;
 }
 
-#services .servicerow .servicebox:hover .icon i {
+#services .servicerow .hover-efect .servicebox i {
+  font-size: 15px;
   color: var(--themecolor);
-  background-color: var(--bgcolor);
+
 }
 
-#services .servicerow .servicebox .serinfo h4 {
+#services .servicerow .hover-efect .servicebox h4 {
   color: var(--themecolor);
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 10px;
+ 
 }
 
-#services .servicerow .servicebox .serinfo h4+p {
 
+
+#services .servicerow .hover-efect .servicebox h4 + p {
   color: var(--text);
   font-size: 14px;
   font-weight: 500;
 }
 
-@media only screen and (max-width:850px) {
+#services .servicerow .hover-efect .servicebox:hover h4,
+#services .servicerow .hover-efect .servicebox:hover h4 + p,
+#services .servicerow .hover-efect .servicebox:hover i {
+  color: var(--bgcolor);
+}
+
+@media only screen and (max-width: 850px) {
   #services {
     padding: 50px 15px;
-
   }
 
   #services .servicerow {
     grid-template-columns: repeat(2, 1fr);
     grid: gap 15px;
-
   }
 }
 
-@media only screen and (max-width:500px) {
-
-
+@media only screen and (max-width: 500px) {
   #services .servicerow {
     grid-template-columns: repeat(1, 1fr);
     grid: gap 15px;
-
   }
 }
-
-
 
 #contact {
   padding: 40px 30px;
@@ -894,7 +873,6 @@ main {
 #contact .contactrow .contactleft .iconbox:hover i {
   background-color: var(--themecolor);
   color: var(--bgcolor);
-
 }
 
 #contact .contactrow .contactleft .iconbox .info h4 {
@@ -903,7 +881,7 @@ main {
   font-weight: 600;
 }
 
-#contact .contactrow .contactleft .iconbox .info h4+p {
+#contact .contactrow .contactleft .iconbox .info h4 + p {
   color: var(--text);
   font-size: 15px;
   font-weight: 500;
@@ -917,8 +895,6 @@ main {
   border-radius: 4px;
   padding: 30px;
 }
-
-
 
 #contact .contactrow .contactright form input,
 #contact .contactrow .contactright form textarea {
@@ -934,7 +910,6 @@ main {
   outline: none;
   resize: none;
   transition: 0.5s;
-
 }
 
 #contact .contactrow .contactright form input:focus,
@@ -942,7 +917,7 @@ main {
   border: 3px solid var(--themecolor);
 }
 
-#contact .contactrow .contactright form input[type=submit] {
+#contact .contactrow .contactright form input[type="submit"] {
   background-color: var(--themecolor);
   color: var(--bgcolor);
   border: 2px solid var(--themecolor);
@@ -951,7 +926,7 @@ main {
   cursor: pointer;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 800px) {
   #contact {
     padding: 50px;
   }
@@ -960,16 +935,10 @@ main {
     flex-direction: column;
     gap: 10px;
   }
-
-
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
   #contact {
     padding: 50px 10px;
   }
-
-
-
-
 }
